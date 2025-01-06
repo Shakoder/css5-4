@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.comprehensiveWrapper {
+    flex-direction: column;
+    gap: 193px;
+}
+
+.comprehensiveWrapper, .comprehensiveWrapper>*, .header_main>*,
+.header_main>*>*, .advert>*, .advert> :first-child>*, .description>*,
+ .footerNav, ul {
+    display: flex;
+}
+
+.header_main {
+    flex-direction: column;
+    gap: 64px;
+}
+
+main {
+    flex-direction: column;
+    gap: 65px;
+    width: 72.2vw;
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, footer {
+    height: 64px;
+    justify-content: center;
+}
+
+header {
+    align-items: center;
+    background-color: #F1EBFF;
+}
+
+.headerNav ul {
+    gap: 16px;
+}
+
+.headerNav a:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+.headerNav a {
+    color: #5E6577;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.headerNav ul :first-child a {
+    color: #40D;
+}
+
+.headerNav ul ::first-letter {
+    text-transform: capitalize;
+}
+
+.footerNav ul {
+    gap: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.advert {
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #CCD3E0;
+}
+
+.advert> :first-child {
+    justify-content: space-between;
+}
+
+.advert> :first-child>* {
+    align-items: center;
+    border-radius: 16px;
+}
+
+.advert> :first-child>*:not(.search-loap) {
+    padding-block: 8px;
+    padding-right: 24px;
+    padding-left: 12px;
+    gap: 12px;
+    background-color: #F1EBFF;
+}
+
+.search-loap {
+    background-color: #40D;
+}
+
+.advert> :first-child> :last-child {
+    background-color: #40D;
+    justify-content: center;
+    flex-basis: 56px;
+}
+
+.advert> :nth-child(2) {
+    gap: 48px;
+}
+
+.advert > :nth-child(2) img {
+    transition: all 600ms ease;
+}
+
+.advert > :nth-child(2) img:hover {
+    scale: 1.25;
+}
+
+.advert> :nth-child(2) p {
+    align-self: center;
+    color: #5E6577;
+    font-size: 32px;
+    text-align: right;
+    font-weight: 400;
+    line-height: 40px;
+    flex-basis: 480px;
+    margin-left: auto;
+}
+
+.advert> :last-child {
+    gap: 24px;
+}
+
+.advert> :last-child :first-child,
+.advert> :last-child :last-child {
+    color: #40D;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.advert> :last-child :last-child {
+    font-weight: 400;
+    color: #5E6577;
+}
+
+.description {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.description>* {
+    padding-inline: 24px;
+    justify-content: space-between;
+    flex-basis: 272px;
+}
+
+.description> :first-child {
+    align-items: flex-start;
+}
+
+.description> :nth-child(2) {
+    align-items: center;
+}
+
+.description> :last-child {
+    align-items: flex-end;
+}
+
+.description> :first-child {
+    flex-basis: 265px;
+}
+
+.description>* * {
+    flex-basis: 488px;
+}
+
+.description>* p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.description>* span {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.description> :first-child p {
+    color: #969696;
+}
+
+.description> :nth-child(2) p {
+    color: #3B3B3B;
+}
+
+.description> :last-child p {
+    color: #155EEF;
+}
+
+.description> :is(:first-child, :nth-child(2)) span {
+    color: #5E6577;
+}
+
+.description> :last-child span {
+    color: #07081A;
+}
+
+footer {
+    color: #fff;
+    align-items: flex-end;
+}
+
+.footerNav {
+    width: 72.2vw;
+    justify-content: flex-end;
+}
+
+.footerNav li {
+    transition: all 350ms ease;
+}
+
+.footerNav li:hover {
+    scale: 1.2;
+    transform: translateY(-5px);
+}
